@@ -1,0 +1,48 @@
+ALGORITHM algorithm data
+VAR
+  tabel one: ARRAY_OF  INTEGER: ARRAY_OF type[length-1];
+    tabel two:ARRAY_OF  INTEGER : ARRAY_OF type[length-1];
+    i:INTEGER
+     j:INTEGER
+      sum=INTEGER
+
+BEGIN
+    
+    sum:=0
+
+FOR i FROM 0 TO set1.length STEP 1  DO
+    sum:=sum tabel one[i]+tabel two[j]
+END_FOR
+FOR j FROM 0 TO tabel two.length STEP 1  DO
+    IF ( tabel two[j]mod2=0) THEN
+        sum:=sum+table[j]
+    END_IF
+END_FOR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+END
