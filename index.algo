@@ -1,0 +1,33 @@
+ALGORITHM date 2
+
+VAR
+     tabelone: ARRAY_OF  INTEGER:  [length-1];
+    tabeltwo:ARRAY_OF  INTEGER : [length-1];
+    i:INTEGER
+    
+      sumx=INTEGER
+BEGIN
+  
+    
+    sum:=0
+
+FOR i FROM 0 TO tabelone.length-1 STEP 1  DO
+    FOR j FROM 0 TO tabeltwo.length-1 STEP 1  DO
+        IF (tableone[i]=tabletwo[j]) THEN
+      sum =tableone[i] +sum
+        END_IF
+
+    END_FOR
+        
+END_FOR
+    
+END_FOR
+FOR j FROM 0 TO tabletwo.length-1 STEP 1  DO
+     FOR j FROM 0 TO tableone STEP 1  DO
+         IF (tabletwo)[j]=tableone[i] THEN
+         sum =tabletwo[j] +sum
+     END_FOR
+END_FOR
+
+
+END
