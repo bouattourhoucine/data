@@ -1,7 +1,7 @@
 ALGORITHM algorithm data
 VAR
-  tabel one: ARRAY_OF  INTEGER: ARRAY_OF type[length-1];
-    tabel two:ARRAY_OF  INTEGER : ARRAY_OF type[length-1];
+  tabelone: ARRAY_OF  INTEGER:  [length-1];
+    tabeltwo:ARRAY_OF  INTEGER : [length-1];
     i:INTEGER
      j:INTEGER
       sum=INTEGER
@@ -10,15 +10,23 @@ BEGIN
     
     sum:=0
 
-FOR i FROM 0 TO set1.length STEP 1  DO
-    sum:=sum tabel one[i]+tabel two[j]
-END_FOR
-FOR j FROM 0 TO tabel two.length STEP 1  DO
-    IF ( tabel two[j]mod2=0) THEN
-        sum:=sum+table[j]
-    END_IF
-END_FOR
+FOR i FROM 0 TO tabelone.length-1 STEP 1  DO
+    FOR j FROM 0 TO tabeltwo.length-1 STEP 1  DO
+        IF (tableone[i]!=tabletwo[j]) THEN
+      sum =tableone[i] +sum
+        END_IF
 
+    END_FOR
+        
+END_FOR
+    
+END_FOR
+FOR j FROM 0 TO tabletwo.length-1 STEP 1  DO
+     FOR j FROM 0 TO tableone STEP 1  DO
+         IF (tabletwo)[j]!=tableone[i] THEN
+         sum =tabletwo[j] +sum
+     END_FOR
+END_FOR
 
 
 
